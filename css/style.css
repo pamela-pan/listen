@@ -1,0 +1,302 @@
+body
+{
+  background-color: black;
+  color: white;
+  background-size:cover;
+
+}
+
+.bodyPara{
+  align-content: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../font/YuShiXingShu-2.ttf");
+}
+
+@font-face {
+  font-family: "mySecondFont";
+  src: url("../font/ShenYunChangYouTi-2.ttf");
+}
+
+/*moon & caption animation*/
+@keyframes moonAnimation {
+  0% {
+    opacity: 0;
+  }
+
+    25% {
+      opacity: 1;
+    }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+#first
+{
+  color: #f3c37a;
+  opacity: 0;
+  animation-name: moonAnimation;
+  animation-duration: 49s;
+  animation-delay: 32s;
+  display: none;
+}
+
+/*cricket & caption animation*/
+
+#cricket{
+  color: #39E697;
+  opacity: 0;
+  animation-name:  moonAnimation;
+  animation-duration: 18s;
+  animation-delay: 98s;
+  display: none;
+}
+
+/*wind & caption animation*/
+#wind{
+  color: #84A5F8;
+  opacity: 0;
+  animation-name:  moonAnimation;
+  animation-delay: 136s;
+  animation-duration: 17s;
+  display: none;
+}
+
+/*leaf & caption animation*/
+#leaf{
+  color: #EDA421;
+  opacity: 0;
+  animation-name:  moonAnimation;
+  animation-delay: 182s;
+  animation-duration: 27s;
+  display: none;
+}
+
+#word
+{
+  font-family: "mySecondFont";
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60px;
+  margin: -10px;
+  left: 50%;
+  visibility: visible;
+}
+
+
+#demo{
+  font-family: "myFirstFont";
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60px;
+  left: 50%;
+  visibility: hidden;
+
+}
+
+#demo2, #demo3, #demo4, #demo5, #demo6, #demo7{
+  font-family: "myFirstFont";
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60px;
+  left: 50%;
+  visibility: hidden;
+
+}
+
+#poem
+{
+  font-family: "myFirstFont";
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60px;
+  left: 100px;
+  top: 50px;
+  z-index: 1;
+  color: white;
+  position:absolute;
+
+}
+
+#top{
+  font-family: "myFirstFont";
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60px;
+  position: relative;
+  top: 48.9px;
+  right: 9.5vw;
+  z-index: 8;
+  color: white;
+  opacity: 0;
+  transition: 3s opacity;
+}
+
+.caption{
+  font-family: "myFirstFont";
+  color:gray;
+  position: absolute;
+    bottom: 30px;
+    font-size: 25px;
+}
+
+@keyframes capAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+75% {
+  opacity: 1;
+}
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/*caption1*/
+#cap1{
+  color: #84A5F8;
+  opacity: 0;
+  position: relative;
+  z-index: 9;
+  transition: opacity 1s;
+  right:-31vw;
+}
+
+#cap_moon{
+  color: #84A5F8;
+  opacity: 0;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  transition: opacity 1s;
+  right:-30vw;
+}
+
+#cap2 {
+  color: #84A5F8;
+  opacity: 0;
+  /* position: relative; */
+  z-index: 11;
+  transition: opacity 1s;
+  display: none;
+  right:10px;
+}
+
+#cap3{
+  color: #84A5F8;
+  opacity: 0;
+  /* position: relative; */
+  z-index: 13;
+  transition: opacity 1s;
+  right:10px;
+}
+
+
+#cap4{
+  color: #84A5F8;
+  opacity: 0;
+  /* position: relative; */
+  z-index: 14;
+  transition: opacity 1s;
+  right:10px;
+}
+
+#cap5{
+  color: #84A5F8;
+  opacity: 0;
+  /* position: relative; */
+  z-index: 15;
+  transition: opacity 1s;
+  right:10px;
+}
+
+
+#cap6{
+  color: #84A5F8;
+  opacity: 0;
+  /* position: relative; */
+  z-index: 16;
+  transition: opacity 1s;
+  right:10px;
+}
+
+
+/* Popup container - can be anything you want */
+/* .popup {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+  bottom: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/*button image*/
+#button{
+
+  position: absolute;
+  bottom: 20px;
+  width: 70px;
+}
+
+/* The actual popup */
+/* .popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+} */
+
+/* Popup arrow */
+/* .popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* Toggle this class - hide and show the popup */
+
+/* Add animation (fade in the popup) */
+/* @-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} */
+/*
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} */
